@@ -29,7 +29,7 @@ class FunctionBasisSet basis where
     -- Get the core hamaltonion matrix,
     -- H(i,j) = intergral of f_i*(x) h_R f_i(x) dx
     -- For the single electron hamiltonian for the nuclei in R.
-    coreHamaltonion :: basis -> Nuclei -> Double
+    coreHamaltonion :: basis -> Nuclei -> MatrixXd
     -- Get the exchange integral of the 2 basis functions (i,i) that is
     -- the integral f_i*(x1)f_j(x1) r(x1,x2) f_j*(x2)f_i(x2) dx1 dx2
     -- Where r(x1,x2) is the reciprocal of the distance squared between x1 and x2. 
